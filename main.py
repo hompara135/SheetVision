@@ -32,11 +32,17 @@ whole_files = [
     "resources/template/whole-note-space.png"]
 
 staff_imgs = [cv2.imread(staff_file, 0) for staff_file in staff_files]
+# 보표 이미지
 quarter_imgs = [cv2.imread(quarter_file, 0) for quarter_file in quarter_files]
+# 4분음표 이미지
 sharp_imgs = [cv2.imread(sharp_files, 0) for sharp_files in sharp_files]
+# 샾 이미지
 flat_imgs = [cv2.imread(flat_file, 0) for flat_file in flat_files]
+# 내림표 이미지
 half_imgs = [cv2.imread(half_file, 0) for half_file in half_files]
+# 2분음표 이미지
 whole_imgs = [cv2.imread(whole_file, 0) for whole_file in whole_files]
+# 온음표 이미지
 
 staff_lower, staff_upper, staff_thresh = 50, 150, 0.77
 sharp_lower, sharp_upper, sharp_thresh = 50, 150, 0.70
